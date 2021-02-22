@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>task</title>
+ <style>
+     .fname{
+ border: none;
+ outline: none;
+ border-bottom: black solid 2px;
+}
+.lname{
+ border: none;
+ outline: none;
+ border-bottom: black solid 2px;
+ margin-left: 10px;
+}
+.lnamelable{
+margin-left: 115px;
+}
+span{
+font-size: 22px;
+margin-left:10px ;
+}
+.form{
+border:black solid 2px;
+width: 380px;
+height: 250px;
+padding-left:5px ;
+padding-top:5px ;
+}
+.add{
+border: none;
+outline: none;
+border-bottom: black solid 2px;
+width: 355px;
+}
+.city{
+border: none;
+outline: none;
+border-bottom: black solid 2px;
+width: 100px;
+}
+.state,.zip{
+ border: none;
+ outline: none;
+ border-bottom: black solid 2px;
+ width: 100px;
+ margin-left: 20px;
+ }
+.statelabel{
+ margin-left: 100px;
+}
+}
+.ziplabel{
+ margin-left: 95px;
+}
+.sub,.zine,.one,.two,.cat,.fishing,.computer{
+ font-weight: bold;
+}
+ </style>
+</head>
+<body>
+ <form class="form" >
+ <span style="background-color: red;" >Yes! I want to subscribe to Mag-O-Zine</span><br>
+ <input type="text" id="fname" name="fname" class="fname" required >
+ <input type="text" id="lname" name="lname" class="lname" required ><br>
+ <label for="fname">First name</label>
+ <label for="lname" class="lnamelable">Last name</label>
+ <input type="text" id="add" name="address" class="add" required ><br>
+ <label for="add">address</label><br>
+ <input type="text" id="city" name="city" class="city" required >
+ <input type="text" id="state" name="state" class="state" required >
+ <input type="text" id="zip" name="zip" class="zip" required ><br>
+ <label for="city">city</label>
+ <label for="state" class="statelabel">state</label>
+ <label for="zip" class="ziplabel">zip</label><br>
+ <label class="sub">Subscribe for:</label>
+ <input type="checkbox" id="oneyear" name="year" value="$19.95">
+ <label for="oneyear" class="one">1 year ($19.95)</label>
+ <input type="checkbox" id="twoyear" name="year" value="$35.00">
+ <label for="twoyear" class="two">2 year ($35.00)</label><br>
+ <label class="zine">Send me more information about:</label><br>
+ <input type="checkbox" id="computer" name="zine" value="Computer-Zine">
+ <label for="computer" class="computer">Computer-Zine</label><br>
+ <input type="checkbox" id="fishing" name="zine" value="Fishing-Zine">
+ <label for="fishing" class="fishing">Fishing-Zine</label><br>
+ <input type="checkbox" id="cat" name="zine" value="Cat-O-Zine">
+ <label for="cat" class="cat">Cat-O-Zine</label>
+ </form>
+</body>
+</html>
