@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: darkviolet;
+                color: cyan;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 600;
+                font-size: 30px;
+                text-align: center;
+            }
+        </style>
+    </head>
+<body>
+<script>
+var p = document.createElement('p');
+document.body.append(p);
+p.innerHTML = 'Click Here to Generate a random 8 Digit Number';
+var h2 = document.createElement('h2');
+var btn = document.createElement('button');
+document.body.append(btn);
+btn.innerHTML = 'Generate';
+document.body.append(h2);
+btn.setAttribute('onclick', 'random();');
+btn.style.background = 'none';
+btn.style.color = 'cyan';
+btn.style.padding = '8px';
+btn.style.borderColor = 'cyan';
+btn.style.fontFamily = 'lato';
+btn.style.fontSize = '20px';
+btn.style.fontWeight = 'bolder';
+var random = () => {
+    h2.innerHTML = (Math.random() + '').substring(2, 10);
+}
+</script>
+
+</body>
+</html>
