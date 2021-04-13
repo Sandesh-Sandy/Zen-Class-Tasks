@@ -1,11 +1,9 @@
 const express = require('express');
 const fs = require('fs');
-const app = express();
-const path = require('path');
 
-app.get('/san', (req, res) => {
-    res.send('Hello Sandy');
-})
+const app = express();
+
+
 
 app.get('/download', (req, res) => {
     var text = `${new Date().toLocaleString()}`;
